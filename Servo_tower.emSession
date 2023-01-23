@@ -2,7 +2,7 @@
 <session>
  <Bookmarks/>
  <Breakpoints groups="Breakpoints" active_group="Breakpoints">
-  <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
+  <BreakpointListItem trigger="" line="46" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../nRF5_SDK_17.1.0_ddde560/modules/nrfx/nrfx.h" useHWbreakpoint="false"/>
  </Breakpoints>
  <ExecutionProfileWindow/>
  <FrameBufferWindow>
@@ -23,8 +23,8 @@
  <Project>
   <ProjectSessionItem path="Servo_tower"/>
   <ProjectSessionItem path="Servo_tower;Servo_tower"/>
-  <ProjectSessionItem path="Servo_tower;Servo_tower;CMSIS Files"/>
   <ProjectSessionItem path="Servo_tower;Servo_tower;Script Files"/>
+  <ProjectSessionItem path="Servo_tower;Servo_tower;Source Files"/>
  </Project>
  <Register1>
   <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;TIMER3/TASKS_START;TIMER3/TASKS_STOP;TIMER3/TASKS_COUNT;TIMER3/TASKS_CLEAR;TIMER3/TASKS_SHUTDOWN;TIMER3/SHORTS;TIMER3/INTENSET;TIMER3/INTENCLR;TIMER3/MODE;TIMER3/BITMODE;TIMER3/PRESCALER" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context;TIMER3;TIMER3/TASKS_START;TIMER3/TASKS_COUNT;TIMER3/TASKS_CLEAR" name="thread_freertos_mqttsn_pca10056" decimalNodes="" octalNodes="" unsignedNodes=""/>
@@ -57,7 +57,10 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="38" useTextEdit="1" path="FreeRTOS.h" left="0" selected="1" top="54" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="36" y="51" useTextEdit="1" path="main.c" left="0" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="43" useTextEdit="1" path="../nRF5_SDK_17.1.0_ddde560/modules/nrfx/nrfx.h" left="0" top="18" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="41" y="53" useTextEdit="1" openedFrom="C:/Users/ettran/Documents/SEGGER Embedded Studio for ARM Projects/nRF5_SDK_17.1.0_ddde560/modules/nrfx/nrfx.h" path="../nRF5_SDK_17.1.0_ddde560/modules/nrfx/drivers/nrfx_errors.h" left="0" top="45" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/Users/ettran/Documents/SEGGER Embedded Studio for ARM Projects/nRF5_SDK_17.1.0_ddde560/modules/nrfx/nrfx.h" path="../nRF5_SDK_17.1.0_ddde560/modules/nrfx/drivers/nrfx_common.h" left="0" top="93" codecName="Default"/>
  </Files>
- <EMStudioWindow activeProject="Servo_tower" fileDialogDefaultFilter="*.h" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="C:/Users/ettran/Documents/SEGGER Embedded Studio for ARM Projects/Executable_2/lib/FreeRTOS/FreeRTOS-Kernel/Source/portable/GCC/ARM_CM4F/portmacro.h&#xa;" fileDialogInitialDirectory="C:/Users/ettran/Documents/SEGGER Embedded Studio for ARM Projects/Servo_tower/lib/FreeRTOS/FreeRTOS-Kernel/Source/include" debugSearchPath="" autoConnectCapabilities="3199"/>
+ <EMStudioWindow activeProject="Servo_tower" fileDialogDefaultFilter="*.h" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="C:/Users/ettran/Documents/SEGGER Embedded Studio for ARM Projects/Executable_2/lib/FreeRTOS/FreeRTOS-Kernel/Source/portable/GCC/ARM_CM4F/portmacro.h&#xa;" fileDialogInitialDirectory="C:/Users/ettran/Documents/SEGGER Embedded Studio for ARM Projects/Servo_tower/lib/FreeRTOS/FreeRTOS-Kernel/Source/include" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

@@ -111,7 +111,7 @@
     </folder>
     <configuration
       Name="Debug"
-      c_user_include_directories="C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\Servo_tower\\lib\\FreeRTOS\\FreeRTOS-Kernel\\Source;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\Servo_tower\\lib\\FreeRTOS\\FreeRTOS-Kernel\\Source\\include;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\Servo_tower\\lib\\FreeRTOS\\FreeRTOS-Kernel\\Source\\portable\\GCC\\ARM_CM4F" />
+      c_user_include_directories="C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\nRF5_SDK_17.1.0_ddde560\\modules\\nrfx;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\nRF5_SDK_17.1.0_ddde560\\modules\\nrfx\\hal;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\nRF5_SDK_17.1.0_ddde560\\modules\\nrfx\\templates;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\nRF5_SDK_17.1.0_ddde560\\modules\\nrfx\\templates\\nRF52840;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\Servo_tower\\lib\\FreeRTOS\\FreeRTOS-Kernel\\Source;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\Servo_tower\\lib\\FreeRTOS\\FreeRTOS-Kernel\\Source\\include;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\Servo_tower\\lib\\FreeRTOS\\FreeRTOS-Kernel\\Source\\portable\\GCC\\ARM_CM4F" />
   </project>
   <configuration
     Name="Debug"
