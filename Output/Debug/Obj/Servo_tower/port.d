@@ -1,15 +1,12 @@
 Output/Debug/Obj/Servo_tower/port.o: \
   C:\Users\ettran\Documents\SEGGER\ Embedded\ Studio\ for\ ARM\ Projects\Servo_tower\lib\FreeRTOS\FreeRTOS-Kernel\Source\portable\GCC\ARM_CM4F\port.c \
   C:\Users\ettran\Documents\SEGGER\ Embedded\ Studio\ for\ ARM\ Projects\Servo_tower\lib\FreeRTOS\FreeRTOS-Kernel\Source\include\FreeRTOS.h \
-  C:\Users\ettran\AppData\Local\SEGGER\SEGGER\ Embedded\ Studio\v3\packages\libraries\libcxx\include\stddef.h \
-  C:\Users\ettran\AppData\Local\SEGGER\SEGGER\ Embedded\ Studio\v3\packages\libraries\libcxx\include\__config \
-  C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ for\ ARM\ 6.34\include\stddef.h \
-  C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ for\ ARM\ 6.34\include\__SEGGER_RTL.h \
-  C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ for\ ARM\ 6.34\include\__SEGGER_RTL_ConfDefaults.h \
-  C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ for\ ARM\ 6.34\include\__SEGGER_RTL_Conf.h \
-  C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ for\ ARM\ 6.34\include\__SEGGER_RTL_Arm_Conf.h \
-  C:\Users\ettran\AppData\Local\SEGGER\SEGGER\ Embedded\ Studio\v3\packages\libraries\libcxx\include\stdint.h \
-  C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ for\ ARM\ 6.34\include\stdint.h \
+  C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ for\ ARM\ 7.10a\include\stddef.h \
+  C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ for\ ARM\ 7.10a\include\__SEGGER_RTL.h \
+  C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ for\ ARM\ 7.10a\include\__SEGGER_RTL_ConfDefaults.h \
+  C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ for\ ARM\ 7.10a\include\__SEGGER_RTL_Conf.h \
+  C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ for\ ARM\ 7.10a\include\__SEGGER_RTL_Arm_Conf.h \
+  C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ for\ ARM\ 7.10a\include\stdint.h \
   C:\Users\ettran\Documents\SEGGER\ Embedded\ Studio\ for\ ARM\ Projects\Servo_tower\lib\FreeRTOS\FreeRTOS-Kernel\Source\include\FreeRTOSConfig.h \
   C:\Users\ettran\Documents\SEGGER\ Embedded\ Studio\ for\ ARM\ Projects\Servo_tower\lib\FreeRTOS\FreeRTOS-Kernel\Source\include\projdefs.h \
   C:\Users\ettran\Documents\SEGGER\ Embedded\ Studio\ for\ ARM\ Projects\Servo_tower\lib\FreeRTOS\FreeRTOS-Kernel\Source\include\portable.h \

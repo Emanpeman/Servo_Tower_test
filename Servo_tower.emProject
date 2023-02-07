@@ -1,5 +1,19 @@
 <!DOCTYPE CrossStudio_Project_File>
 <solution Name="Servo_tower" target="8" version="2">
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_c_language_standard="gnu99"
+    gcc_cplusplus_language_standard="gnu++98"
+    gcc_debugging_level="Level 3"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="None" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="Level 2"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="Level 2 balanced" />
   <project Name="Servo_tower">
     <configuration
       LIBRARY_IO_TYPE="RTT"
@@ -34,6 +48,9 @@
       project_type="Executable"
       target_reset_script="Reset();"
       target_trace_initialize_script="EnableTrace(&quot;$(TraceInterfaceType)&quot;)" />
+    <configuration
+      Name="Debug"
+      c_user_include_directories="C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\nRF5_SDK_17.1.0_ddde560\\modules\\nrfx;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\nRF5_SDK_17.1.0_ddde560\\components\\boards;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\nRF5_SDK_17.1.0_ddde560\\components\\libraries\\util;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\nRF5_SDK_17.1.0_ddde560\\modules\\nrfx\\hal;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\nRF5_SDK_17.1.0_ddde560\\modules\\nrfx\\templates;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\nRF5_SDK_17.1.0_ddde560\\modules\\nrfx\\templates\\nRF52840;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\Servo_tower\\lib\\FreeRTOS\\FreeRTOS-Kernel\\Source;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\Servo_tower\\lib\\FreeRTOS\\FreeRTOS-Kernel\\Source\\include;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\Servo_tower\\lib\\FreeRTOS\\FreeRTOS-Kernel\\Source\\portable\\GCC\\ARM_CM4F" />
     <folder Name="CMSIS Files">
       <file file_name="nRF/Device/Include/nrf.h" />
       <file file_name="nRF/Device/Source/system_nrf52.c">
@@ -66,11 +83,13 @@
         <folder Name="FreeRTOS-Kernel">
           <folder Name="Source">
             <folder Name="include">
+              <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/FreeRTOS.h" />
+              <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/FreeRTOSConfig.h" />
+              <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/StackMacros.h" />
               <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/atomic.h" />
               <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/croutine.h" />
               <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/deprecated_definitions.h" />
               <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/event_groups.h" />
-              <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/FreeRTOSConfig.h" />
               <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/list.h" />
               <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/message_buffer.h" />
               <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/mpu_prototypes.h" />
@@ -80,12 +99,10 @@
               <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/queue.h" />
               <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/semphr.h" />
               <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/stack_macros.h" />
-              <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/StackMacros.h" />
               <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/stdint.readme" />
               <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/stream_buffer.h" />
               <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/task.h" />
               <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/timers.h" />
-              <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/include/FreeRTOS.h" />
             </folder>
             <folder Name="portable">
               <folder Name="GCC">
@@ -95,7 +112,7 @@
                 </folder>
               </folder>
               <folder Name="MemMang">
-                <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/portable/MemMang/heap_1.c" />
+                <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/portable/MemMang/heap_3.c" />
               </folder>
             </folder>
             <file file_name="lib/FreeRTOS/FreeRTOS-Kernel/Source/croutine.c" />
@@ -109,20 +126,5 @@
         </folder>
       </folder>
     </folder>
-    <configuration
-      Name="Debug"
-      c_user_include_directories="C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\nRF5_SDK_17.1.0_ddde560\\modules\\nrfx;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\nRF5_SDK_17.1.0_ddde560\\modules\\nrfx\\hal;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\nRF5_SDK_17.1.0_ddde560\\modules\\nrfx\\templates;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\nRF5_SDK_17.1.0_ddde560\\modules\\nrfx\\templates\\nRF52840;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\Servo_tower\\lib\\FreeRTOS\\FreeRTOS-Kernel\\Source;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\Servo_tower\\lib\\FreeRTOS\\FreeRTOS-Kernel\\Source\\include;C:\\Users\\ettran\\Documents\\SEGGER Embedded Studio for ARM Projects\\Servo_tower\\lib\\FreeRTOS\\FreeRTOS-Kernel\\Source\\portable\\GCC\\ARM_CM4F" />
   </project>
-  <configuration
-    Name="Debug"
-    c_preprocessor_definitions="DEBUG"
-    gcc_debugging_level="Level 3"
-    gcc_omit_frame_pointer="Yes"
-    gcc_optimization_level="None" />
-  <configuration
-    Name="Release"
-    c_preprocessor_definitions="NDEBUG"
-    gcc_debugging_level="Level 2"
-    gcc_omit_frame_pointer="Yes"
-    gcc_optimization_level="Level 2 balanced" />
 </solution>

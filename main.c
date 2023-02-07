@@ -10,57 +10,71 @@ Purpose : Generic application start
 
 */
 
+#define BOARD_PCA10056
+
 #include <nrf.h>
 #include <hal/nrf_gpio.h>
 #include "FreeRTOS.h"
 #include "task.h"
+//#include "boards.h"
 #include <stdlib.h>
 #include <stdio.h>
 
-
-#define Button_2 12
-#define Button_4 25
 #define LED_2 14
 #define LED_4 16
 
 
-int main(void) {
- 
+void blinky_led4(void * pvParameters);
+void blinky_led2(void * pvParameters);
 
- nrf_gpio_cfg_output(LED_2);
- nrf_gpio_cfg_output(LED_4);
- nrf_gpio_cfg_input(Button_2, NRF_GPIO_PIN_PULLUP);
- nrf_gpio_cfg_input(Button_4, NRF_GPIO_PIN_PULLUP);
-
-
- nrf_gpio_pin_set(LED_2);
- nrf_gpio_pin_set(LED_4);
-
-while(1)
-{
-
-
-
-
-if(nrf_gpio_pin_read(Button_2) == 0)
-nrf_gpio_pin_clear(LED_2); 
-
-else
-nrf_gpio_pin_set(LED_2);
-
-
-if(nrf_gpio_pin_read(Button_4) == 0)
-nrf_gpio_pin_clear(LED_4); 
-
-else
-nrf_gpio_pin_set(LED_4);
-
-
-
-
-}
-
+void blinky_led2(void * pvParameters)
+{ 
+  nrf_gpio_cfg_output(LED_2);
+  while(true)
+  {
+  
+    //nrf_gpio_pin_toggle(LED_2);
+    nrf_gpio_pin_set(LED_2);
+    //vTaskDelay(200);
 
   }
+}
+
+void blinky_led4(void * pvParameters)
+{ 
+
+  while(true)
+  {
+    
+    nrf_gpio_pin_toggle(LED_4);
+    //vTaskDelay(1);
+  }
+}
+ 
+int main(void) {
+  BaseType_t x = 0;
+  int k;
+ 
+  x = xTaskCreate(blinky_led2, "blink_2", configMINIMAL_STACK_SIZE, NULL, 0, NULL);
+
+//xTaskCreate(blinky_led4, "LED4", 4094, NULL, 5, NULL);
+switch (x) {
+case pdPASS:
+  k = 1;
+  break;
+case pdFAIL:
+  k = 1;
+case errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY:
+  k = 1;
+  break;
+}
+
+  vTaskStartScheduler();
+
+
+  while (true) {
+  }
+ 
+ }
 
   /*************************** End of file ****************************/
